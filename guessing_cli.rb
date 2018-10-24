@@ -19,7 +19,7 @@ end
 #
 def run_guessing_game
 
-  you_guessed=gets.chomp
+  you_guessed=""
 
   while you_guessed!="exit"
     my_num = computer_num
