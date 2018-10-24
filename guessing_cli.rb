@@ -1,10 +1,9 @@
 
-#
 def run_guessing_game
 
-  you_guessed=""
+  you_guessed = ""
 
-  while you_guessed!="exit"
+  while true
     my_num = rand(1..6)
     puts "Guess a number between 1 and 6."
     you_guessed = gets.chomp
