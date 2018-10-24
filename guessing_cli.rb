@@ -18,12 +18,12 @@ def exit?
 end
 #
 def run_guessing_game
-  
+
   you_guessed=gets.chomp
 
   while you_guessed!="exit"
     my_num = computer_num
-    puts "Guess a number between 1 and 6"
+    puts "Guess a number between 1 and 6."
     you_guessed = gets.chomp
     #
     # if you_guessed == "exit"
