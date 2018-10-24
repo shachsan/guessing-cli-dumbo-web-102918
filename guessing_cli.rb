@@ -18,8 +18,7 @@ def exit?
 end
 #
 def run_guessing_game
-  puts "Welcome to Guess Game"
-  puts "(Pleae note: You could exit this game after finishing a started game by enter 'exit'.)"
+  
   you_guessed=gets.chomp
 
   while you_guessed!="exit"
