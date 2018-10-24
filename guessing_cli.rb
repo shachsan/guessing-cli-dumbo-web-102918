@@ -20,16 +20,17 @@ end
 def run_guessing_game
   puts "Welcome to Guess Game"
   puts "(Pleae note: You could exit this game after finishing a started game by enter 'exit'.)"
+  you_guessed=gets.chomp
   
-  loop do
+  while you_guessed!="exit"
     my_num = computer_num
     puts "Can you guess my number between 1 and 6?"
     you_guessed = gets.chomp
-    # 
+    #
     # if you_guessed == "exit"
     #   break
-    # end 
-    
+    # end
+
     if you_guessed.to_i > 6 || you_guessed.to_i < 1
       puts "Invalid guess, please enter the number between 1 and 6"
       next
