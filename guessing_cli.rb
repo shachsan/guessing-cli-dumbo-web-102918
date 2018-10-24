@@ -1,3 +1,4 @@
+# Language: Ruby, Level: Level 3
 
 def run_guessing_game
 
