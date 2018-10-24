@@ -27,6 +27,7 @@ def run_guessing_game
     you_guessed = gets.chomp
     #
     if you_guessed == "exit"
+      puts "Goodbye!"
       break
     end
 
