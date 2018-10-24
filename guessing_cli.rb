@@ -7,15 +7,15 @@ def computer_num
   return rand(1..6)
 end
 #
-def exit?
-  player_selection = gets.chomp
-  if player_selection == "exit"
-    puts "Goodbye!"
-    return true
-  else
-    return false
-  end
-end
+# def exit?
+#   player_selection = gets.chomp
+#   if player_selection == "exit"
+#     puts "Goodbye!"
+#     return true
+#   else
+#     return false
+#   end
+# end
 #
 def run_guessing_game
   puts "Welcome to Guess Game"
@@ -32,10 +32,20 @@ def run_guessing_game
 
     if you_guessed == my_num
       puts "You guessed the correct number!"
-      break if exit?
+      player_selection = gets.strip
+      if player_selection == "exit"
+        puts "Goodbye!"
+        break
+      end
+      # break if exit?
     else
       puts "The computer guessed #{my_num}."
-      break if exit?
+      player_selection = gets.strip
+      if player_selection == "exit"
+        puts "Goodbye!"
+        break
+      end 
+      # break if exit?
     end
 
   end
