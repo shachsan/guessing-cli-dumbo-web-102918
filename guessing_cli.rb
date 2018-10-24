@@ -26,9 +26,9 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     you_guessed = gets.chomp
     #
-    # if you_guessed == "exit"
-    #   break
-    # end
+    if you_guessed == "exit"
+      break
+    end
 
     if you_guessed.to_i > 6 || you_guessed.to_i < 1
       puts "Invalid guess, please enter the number between 1 and 6"
