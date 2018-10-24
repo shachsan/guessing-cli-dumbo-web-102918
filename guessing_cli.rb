@@ -44,7 +44,7 @@ def run_guessing_game
       if player_selection == "exit"
         puts "Goodbye!"
         break
-      end 
+      end
       # break if exit?
     end
 
