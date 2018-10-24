@@ -20,7 +20,7 @@ end
 def run_guessing_game
   puts "Welcome to Guess Game"
   puts "(Pleae note: You could exit this game after finishing a started game by enter 'exit'.)"
-  binding.pry
+  # binding.pry
   loop do
     my_num = computer_num
     puts "Can you guess my number between 1 and 6?"
